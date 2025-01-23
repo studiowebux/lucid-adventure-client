@@ -1,0 +1,13 @@
+{
+  "imports": {
+    "@studiowebux/deno-minilog": "jsr:@studiowebux/deno-minilog@^0.3.1",
+    "@hono/zod-validator": "npm:@hono/zod-validator",
+    "hono": "jsr:@hono/hono@^4.6.16",
+    "zod": "npm:zod",
+    "open": "npm:open"
+  },
+  "tasks": {
+    "play": "deno run --allow-read --allow-write --allow-env --allow-net --allow-run ./mod.ts",
+    "compile": "deno compile --no-check --allow-read --allow-write --allow-net --allow-env --allow-run --output lucid-adventure ./mod.ts"
+  }
+}
