@@ -1,0 +1,73 @@
+{
+  "version": "4",
+  "specifiers": {
+    "jsr:@hono/hono@^4.6.16": "4.6.16",
+    "jsr:@studiowebux/deno-minilog@~0.3.1": "0.3.1",
+    "npm:open@*": "10.1.0"
+  },
+  "jsr": {
+    "@hono/hono@4.6.16": {
+      "integrity": "b540c6b1352d73142895f7bb6bfd0b6cc514ede61c12940338c4ae5dd06cb326"
+    },
+    "@studiowebux/deno-minilog@0.3.1": {
+      "integrity": "438922d0d9b6ad60aaad22dda5c092409de887b9deaf472855b771dc15719c9b"
+    }
+  },
+  "npm": {
+    "bundle-name@4.1.0": {
+      "integrity": "sha512-tjwM5exMg6BGRI+kNmTntNsvdZS1X8BFYS6tnJ2hdH0kVxM6/eVZ2xy+FqStSWvYmtfFMDLIxurorHwDKfDz5Q==",
+      "dependencies": [
+        "run-applescript"
+      ]
+    },
+    "default-browser-id@5.0.0": {
+      "integrity": "sha512-A6p/pu/6fyBcA1TRz/GqWYPViplrftcW2gZC9q79ngNCKAeR/X3gcEdXQHl4KNXV+3wgIJ1CPkJQ3IHM6lcsyA=="
+    },
+    "default-browser@5.2.1": {
+      "integrity": "sha512-WY/3TUME0x3KPYdRRxEJJvXRHV4PyPoUsxtZa78lwItwRQRHhd2U9xOscaT/YTf8uCXIAjeJOFBVEh/7FtD8Xg==",
+      "dependencies": [
+        "bundle-name",
+        "default-browser-id"
+      ]
+    },
+    "define-lazy-prop@3.0.0": {
+      "integrity": "sha512-N+MeXYoqr3pOgn8xfyRPREN7gHakLYjhsHhWGT3fWAiL4IkAt0iDw14QiiEm2bE30c5XX5q0FtAA3CK5f9/BUg=="
+    },
+    "is-docker@3.0.0": {
+      "integrity": "sha512-eljcgEDlEns/7AXFosB5K/2nCM4P7FQPkGc/DWLy5rmFEWvZayGrik1d9/QIY5nJ4f9YsVvBkA6kJpHn9rISdQ=="
+    },
+    "is-inside-container@1.0.0": {
+      "integrity": "sha512-KIYLCCJghfHZxqjYBE7rEy0OBuTd5xCHS7tHVgvCLkx7StIoaxwNW3hCALgEUjFfeRk+MG/Qxmp/vtETEF3tRA==",
+      "dependencies": [
+        "is-docker"
+      ]
+    },
+    "is-wsl@3.1.0": {
+      "integrity": "sha512-UcVfVfaK4Sc4m7X3dUSoHoozQGBEFeDC+zVo06t98xe8CzHSZZBekNXH+tu0NalHolcJ/QAGqS46Hef7QXBIMw==",
+      "dependencies": [
+        "is-inside-container"
+      ]
+    },
+    "open@10.1.0": {
+      "integrity": "sha512-mnkeQ1qP5Ue2wd+aivTD3NHd/lZ96Lu0jgf0pwktLPtx6cTZiH7tyeGRRHs0zX0rbrahXPnXlUnbeXyaBBuIaw==",
+      "dependencies": [
+        "default-browser",
+        "define-lazy-prop",
+        "is-inside-container",
+        "is-wsl"
+      ]
+    },
+    "run-applescript@7.0.0": {
+      "integrity": "sha512-9by4Ij99JUr/MCFBUkDKLWK3G9HVXmabKz9U5MlIAIuvuzkiOicRYs8XJLxX+xahD+mLiiCYDqF9dKAgtzKP1A=="
+    }
+  },
+  "workspace": {
+    "dependencies": [
+      "jsr:@hono/hono@^4.6.16",
+      "jsr:@studiowebux/deno-minilog@~0.3.1",
+      "npm:@hono/zod-validator@*",
+      "npm:open@*",
+      "npm:zod@*"
+    ]
+  }
+}

@@ -7,7 +7,7 @@
     "open": "npm:open"
   },
   "tasks": {
-    "play": "deno run --allow-read --allow-write --allow-env --allow-net --allow-run ./mod.ts",
+    "play": "deno run --allow-read --allow-write --allow-env --allow-net --allow-run ./src/mod.ts",
     "compile": "deno compile --no-check --allow-read --allow-write --allow-net --allow-env --allow-run --output lucid-adventure ./mod.ts"
   }
 }
